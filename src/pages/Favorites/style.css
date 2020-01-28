@@ -1,0 +1,40 @@
+.container {
+  height: 500px;
+}
+
+.cities-list {
+  overflow-y: scroll;
+  height: 550px;
+  margin-left: 5em;
+}
+
+::-webkit-scrollbar {
+  width: 0px;
+}
+
+.live-clock {
+  text-align: center;
+  font-size: 3em;
+  color: white;
+}
+
+.toggle-btn {
+  text-align: center;
+  color: white;
+  font-weight: bold
+}
+
+
+@media only screen and (max-width: 414px) {
+  .cities-list {
+    overflow-y: none;
+    margin-left: 0;
+    height: 380px;
+  }
+}
+
+@media only screen and (max-width: 320px) {
+  .container {
+    height: 400px;
+  }
+}
