@@ -10,7 +10,7 @@ export default function Navbar(props) {
           <h1 className="nav-title">Weather App</h1>
           <div className="nav-icons">
             <a
-              href="https://github.com/omriza5"
+              href="https://github.com/omriza5/React-Weather-App"
               className="nav-icon"
               target="_blank"
             >
