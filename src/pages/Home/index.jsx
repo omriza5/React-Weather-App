@@ -10,10 +10,10 @@ import DaysList from "../../components/DaysList";
 import Favorite from "../../components/Favorite";
 import "./style.css";
 
-const autoCompleteEndPoint = `http://dataservice.accuweather.com/locations/v1/cities/autocomplete?apikey=${process.env.REACT_APP_ACCU_WEATHER_API_KEY}&q=`;
+const autoCompleteEndPoint = `https://dataservice.accuweather.com/locations/v1/cities/autocomplete?apikey=${process.env.REACT_APP_ACCU_WEATHER_API_KEY}&q=`;
 const cuurentWeatherEndpoint =
-  "http://dataservice.accuweather.com/currentconditions/v1/";
-const geolocationEndPoint = `http://dataservice.accuweather.com/locations/v1/cities/geoposition/search?apikey=${process.env.REACT_APP_ACCU_WEATHER_API_KEY}`;
+  "https://dataservice.accuweather.com/currentconditions/v1/";
+const geolocationEndPoint = `https://dataservice.accuweather.com/locations/v1/cities/geoposition/search?apikey=${process.env.REACT_APP_ACCU_WEATHER_API_KEY}`;
 
 export default function Home(props) {
   const [selectedCity, setSelectedCity] = useStorage("selectedCity", {});

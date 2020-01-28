@@ -1,6 +1,6 @@
 import http from "./httpService";
-const autoCompleteEndPoint = `http://dataservice.accuweather.com/locations/v1/cities/autocomplete?apikey=${process.env.REACT_APP_ACCU_WEATHER_API_KEY}&q=`;
-const dailyForecastsEndPoint = `http://dataservice.accuweather.com/forecasts/v1/daily/5day/`;
+const autoCompleteEndPoint = `https://dataservice.accuweather.com/locations/v1/cities/autocomplete?apikey=${process.env.REACT_APP_ACCU_WEATHER_API_KEY}&q=`;
+const dailyForecastsEndPoint = `https://dataservice.accuweather.com/forecasts/v1/daily/5day/`;
 
 const renderIcon = iconNumber => {
   let index = iconNumber < 10 ? "0" + iconNumber : iconNumber;
