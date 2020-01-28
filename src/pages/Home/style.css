@@ -1,0 +1,57 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  margin: 1.5em;
+
+}
+
+.selected-city {
+  text-align: center;
+  margin-top: 1em;
+  color: white;
+  font-style: italic;
+  font-weight: bold;
+  font-size: 3em;
+  animation-duration: 5s;
+  animation-name: slidein;
+}
+
+.favIcon {
+  text-align: center;
+}
+
+.loading {
+  text-align: center;
+}
+
+@keyframes slidein {
+  from {
+    margin-left: 100%;
+    width: 300%;
+  }
+
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
+}
+
+.dailyForecasts-area .toggle-btn {
+  text-align: center;
+  color: white;
+  font-weight: bold
+}
+
+
+@media only screen and (max-width: 600px) {
+  .selected-city {
+    margin-top: .3em;
+  }
+}
+
+@media only screen and (max-width:375px) {
+  .selected-city {
+    margin-top: .3em;
+    font-size: 1.5em;
+  }
+}

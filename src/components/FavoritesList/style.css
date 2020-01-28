@@ -1,0 +1,32 @@
+.cities-list-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.empty-fav {
+  text-align: center;
+  font-size: 1.5em;
+  font-weight: bold;
+  margin-top: 3.5em;
+  color: white;
+}
+
+@media only screen and (max-width: 414px) {
+  .cities-list-container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+  }
+}
+
+@media only screen and (max-width: 320px) {
+  .cities-list-container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+    height: 250px;
+    overflow-y: scroll;
+  }
+}
