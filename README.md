@@ -1,4 +1,4 @@
-[Link to Heroku](http://omriweatherapp.herokuapp.com/)
+[Link to Heroku](https://omriweatherapp.herokuapp.com/)
 
 ### `how to install`
 
