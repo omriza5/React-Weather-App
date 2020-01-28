@@ -18,7 +18,8 @@
     "react-live-clock": "^3.1.0",
     "react-router-dom": "^5.1.2",
     "react-scripts": "0.9.5",
-    "react-toastify": "^5.5.0"
+    "react-toastify": "^5.5.0",
+    "use-global-storage": "^0.1.0"
   },
   "devDependencies": {},
   "scripts": {
