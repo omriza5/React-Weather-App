@@ -1,4 +1,5 @@
 import React, { Fragment, useState, useEffect } from "react";
+import _ from "lodash";
 import http from "../../services/httpService";
 import { toast } from "react-toastify";
 import { getDailyForecasts } from "../../services/weather";
@@ -39,7 +40,7 @@ export default function Home(props) {
   }, []);
 
   useEffect(() => {
-    if (selectedCity.Key) {
+    if (!_.isEmpty(selectedCity)) {
       (async function getForecasts() {
         const dailyForecasts = await getDailyForecasts(selectedCity);
         setDailyForecasts(dailyForecasts);
@@ -94,10 +95,10 @@ export default function Home(props) {
       <div className="container">
         <header className="search-area">
           <AutocompleteSearch
-            data={cities}
+            data={cities || []}
             placeHolder="City"
             onSearch={handleSearch}
-            value={selectedCity}
+            value={selectedCity || ""}
             onSearchClick={handleSearchClick}
           ></AutocompleteSearch>
         </header>
